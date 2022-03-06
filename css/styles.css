@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+	width: 100%;
+	padding: 5px;
+	background-color: #151b8d;
+	box-sizing: border-box;
+}
+.navbar .contenido {
+	max-width: 1024px;
+	display:flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.bars ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	width: 400px;
+	justify-content: space-between;
+	padding: 0;
+	padding-left: 4px;
+}
+.bars ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: 1s;
+	text-transform: uppercase;
+    padding: 8px 16px ;
+    font-family: 'Caveat', 'sans serif';
+}
+.bars ul li a:hover {
+	text-decoration: none;
+	color:#a2a3b7;
+}
+.bars .active{
+    background-color: #1569C7;
+}
+div.title {
+	display: flex;
+	align-items: center;
+	padding-right: 4px;
+}
+div.title a {
+	text-decoration: none;
+	color: white;
+    font-family: 'Caveat', 'sans serif';
+}
+div.title h2{
+	padding: 0;
+	margin: 0;
+}
+.bars-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+	position: fixed;
+	z-index: 99;
+	left: 10px;
+	top: 9px;
+    border: 0;
+	color: #a2a3b7;
+	cursor: pointer;
+}
+.container{
+    padding: 15px 30px;
+}
+.title-li{
+    margin: 0 auto;
+    padding: 5px 30px;
+}
+.btn{
+    margin: 0 25px;
+    padding: 5px 30px;
+}
+.btn button{
+    background-color: rgba(21, 27, 141, .5);
+    border-radius: 50%;
+    border: 0;
+    padding: 5px 2px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+} 
+@media screen and (max-width: 768px) {
+    .navbar .contenido {
+	    justify-content: flex-end;
+    }
+    .bars-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bars {
+        position: fixed;
+        background: rgba(0, 0, 0, .5);
+        z-index: 98;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        transition: .3s;
+    }
+    .bars.is-active {
+        left: 0;
+    }
+    .bars ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bars ul li {
+        padding: 5px;
+    }
+    .bars ul li a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    div.title h2 {
+        padding: 10.5px;
+    }
+}
