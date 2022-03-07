@@ -84,6 +84,39 @@ div.title h2{
     margin-left: 5px;
     margin-bottom: 8px;
 } 
+.container{
+    padding: 5px;
+}
+.section{
+    margin-bottom: 100px;
+}
+.section h1{
+    text-align: center;
+    font-family: 'Caveat', 'sans serif';
+}
+.title-li{
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.title-li h2{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.title-li h2 a{
+    font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    margin: 0 15px;
+    padding: 5px 30px;
+}
+.btn button{
+    border-radius: 50%;
+    border: 0;
+    padding: 6px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+} 
 .footer {
     position: fixed;
     left: 0;
